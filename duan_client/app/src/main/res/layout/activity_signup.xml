@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#536DFE"
+    android:backgroundTint="#536DFE"
+    tools:context=".LoginActivity"
+    android:id="@+id/loginLayout">
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="50dp">
+
+        <ImageView
+            android:id="@+id/loginImg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo_goidi" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Đăng ký"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Error"
+            android:textColor="#D50000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/signupTxtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvError"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_corner20_bordergray"
+            android:hint="@string/login_username_hint"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/signupTxtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupTxtPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_corner20_bordergray"
+            android:hint="Name"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/signupTxtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupTxtName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_corner20_bordergray"
+            android:hint="@string/login_password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/signupTxtRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupTxtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_corner20_bordergray"
+            android:hint="RePassword"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupTxtRePassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#b3291c"
+            android:text="Đăng ký"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSignup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Đã có tài khoản? Đăng nhập"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

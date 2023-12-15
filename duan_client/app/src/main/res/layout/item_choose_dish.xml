@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+    <ImageView
+        android:id="@+id/img_chooseDish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dish_nuong" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/img_chooseDish"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_chooseDish_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hải Sản"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_chooseDish_gia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="180,000 đ"
+            android:textColor="#C53329"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_giam"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/giam"
+            app:strokeColor="#CC1414"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/tv_soLuong"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_tang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#CC1414"
+            android:drawableLeft="@drawable/tang" />
+    </LinearLayout>
+
+</RelativeLayout>

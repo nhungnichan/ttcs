@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GoiDiClient</string>
+    <string name="login_app_name">Ứng dụng quản lý GoiDi Management</string>
+    <string name="dang_nhap_text">Đăng Nhập</string>
+    <string name="login_username_hint">Phone number</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_remember_text">Remember ?</string>
+    <string name="home_fragment_content_1"></string>
+    <string name="home_fragment_content_2"> </string>
+    <string name="home_content_1">Chúng tôi tự hào là một trong những nhà hàng với phong cách chuyên nghiệp bậc nhất tại Hà Nội,nhà hàng GoiDi sẽ là điểm đến ấn tượng cho quý khách.</string>
+    <string name="restaurant_name">Nhà hàng GoiDi</string>
+    <string name="home_content_2">Với phương châm \'Hãy nấu như nấu cho người mình yêu thương nhất\',chúng tôi luôn mong muốn mang đến cho quý khách những giây phút thư giãn để thưởng thức những món ăn ngon bên gia đình,bạn bè, đồng nghiệp và người thân…</string>
+</resources>

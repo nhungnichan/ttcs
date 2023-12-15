@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+    bank-plus-user:
+         build: ./
+         command:
+            - /bin/sh
+            - -c
+            - |
+                 echo "build client ..."
+                 npm run build
+                 echo "copy ./build to opt/build ..."
+                 cp -r /var/app/bank/bank-plus-user/build/* /opt/build
+         volumes:
+             - ./build:/opt/build
+volumes:
+    bank-plus-user: null
